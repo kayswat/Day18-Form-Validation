@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: 0;
+    padding:0;
+    background-color:rgb(241, 227, 227);
+    font-family:san-seriff;
+    width: 70%;
+    padding: 20px;
+    max-width: 600px;
+  }
+
+
+  h1, p{
+    text-align: center;
+    background-color:rgb(226, 217, 217);
+    margin: 10px 0;
+  }
+  p{
+    font-size: 1.3rem;
+  }
+
+#personal-info input{
+    width:100%;
+    padding: 5px;
+    margin: 5px 0;
+    }
+
+   .hear_about select  {
+    width:50%;
+    }
+
+  fieldset{
+    border: none;
+  }
+
+  .form{
+    padding: 10px;
+  }
+
+  input[type="textarea"]{
+    width: 300px;
+   padding: 5px;
+}
+
+input[type="submit"]{
+    margin: 10px auto;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(84, 11, 179);
+    border: none;
+    color: aliceblue;   
+}
+textarea{
+    display: block;
+    width: 100%;
+}
+
+.input-info{
+    position: relative;
+}
+
+.input-info span{
+    position: absolute;
+    right: 17px;
+    bottom: 12px;
+    color: red;
+    font-size: 14px;
+}
+
+#submit-error{
+    color: red;
+}
+
+.input-info span img{
+    width: 10px;
+}
+

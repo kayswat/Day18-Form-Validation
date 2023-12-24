@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lan = "en">
+  <head>
+  <meta charset= "UTF-8">
+  <title> Survey Form(Project)</title>
+  <link rel = "stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,300;1,9..144,400&family=Hanken+Grotesk:wght@500&family=Inter:wght@500&family=Lexend+Deca:wght@500&family=Montserrat:wght@500&family=Open+Sans&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:ital@1&family=Raleway:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+   
+  <h1 id="title"> Heeb farm survey form</h1>
+  
+  <p id="description"> Thank you for taking your time in helping us serve you better.</p>
+  <form class="survey-form">
+<fieldset id="personal-info"> 
+    <div class="input-info">  
+    <label for=name >Name:</label>
+    <input type="text" id="contact-name" placeholder="Enter your name" onkeyup="validateName()" >
+    <span id="nameError" ></span>
+    </div> 
+
+    <div class="input-info"> 
+    <label for=email >Email</label>
+    <input type="email" id="contact-email" placeholder="Enter your email address" onkeyup="validateEmail()">
+    <span id="emailError"></span>
+    </div> 
+
+    <div class="input-info"> 
+    <label for=number>Phone Number</label>
+    <input type="tel" id="contact-number" placeholder="123 456 7890" onkeyup="validateNumber()">
+    <span id="numberError"></span>
+    </div>
+
+    <div class="input-info"> 
+        <label for="contact-message"> Enter your Message</label>
+        <textarea rows="5" placeholder="Enter your Message" name="contact-message" id="contact-message" onkeyup="validateMessage()"></textarea>
+        <span id="messageError"></span>
+        </div>
+    <label class="hear_about" for="hear_about">
+    How did you hear about us:</label>
+    <select id="hear_about" >
+    <option value="">choose one</option>
+    <option value="Facebook">Facebook</option>
+    <option value="Twitter">Twitter</option>
+    <option value="Television">Television</option>
+    <option value="Radio">Radio</option>
+    </select>
+    <button id="submit" onclick="return validateForm()">Submit</button>
+<span id="submitError"></span>
+
+
+</div>
+</fieldset>
+
+ </form>
+</div>
+</div>
+
+<script src="script.js"></script>
+  </body>
+  </html>
+  
